@@ -1,0 +1,19 @@
+﻿<h3>#= name #</h3>
+<span>#= translation #
+    # if (arabic) { #
+    <a href="\#hadith-modal"
+        data-role="button"
+        data-rel="modalview"
+        data-hadith-id="#= id #"
+        style="font-size: 0.7em">Arabic</a>
+    # } #
+    <a href="\#hadith-modal"
+        data-role="button"
+        data-rel="modalview"
+        data-hadith-id="#= id #"
+        style="font-size: 0.7em">References</a>
+</span>
+<a data-click="App.views.Hadiths.toggleFavorite"
+    data-role="detailbutton"
+    data-style="# if (App.views.Hadiths.isFavorite(id)) { # rowdelete # } else { # rowinsert # } #"
+    data-hadith-id="#= id #"></a>

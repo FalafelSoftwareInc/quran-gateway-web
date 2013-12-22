@@ -1,0 +1,14 @@
+﻿# if (file) {
+    if (file.substring(0, 6) == 'audio/') { #
+        <a href="#= fileCdn #"
+            data-rel="external"
+            target="_blank">#= description #<br /><small>by #= source #</small></a>
+    # } else if (file.substring(0, 7) == 'videos/') { #
+        <a href="views/shared/video.html?title=#= description #&url=#= encodeURIComponent(fileCdn) #">
+            #= description #<br /><small>by #= source #</small></a>
+    # } else if (file.substring(0, 4) == 'http') { #
+        <a href="#= file #"
+            data-rel="external"
+            target="_blank">#= description #<br /><small>by #= source #</small></a>
+    # } 
+} #

@@ -1,0 +1,51 @@
+﻿<div id="verses-detail" data-role="view" data-layout="default"
+    data-show="App.views.Verse.onShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-icon="reply" data-align="left"></a>
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Verse.toggleFavorite" data-role="button" data-icon="heart-empty" data-align="right" class="favorite fa"></a>
+        </div>
+    </header>
+    <p class="range"></p>
+    <ul data-role="buttongroup" data-index="1" data-select="App.views.Verse.onSelect">
+        <li data-icon="play"></li>
+        <li data-icon="pause"></li>
+        <li data-icon="rewind"></li>
+        <li data-icon="fastforward"></li>
+    </ul>
+    <div style="position: relative;">
+        <div data-role="scrollview"><div data-role="page">
+                <p class="arabic panel-container success"></p>
+            </div><div data-role="page">
+                <p class="translation panel-container info"></p>
+            </div></div>
+    </div>
+    <p class="actions">
+        <a href="#" data-role="button" data-rel="external" data-icon="featured" target="_blank">Qur'an</a>
+        <a href="#modal-reciter" data-role="button" data-rel="modalview" data-icon="contacts">Reciter</a>
+        <a href="#" data-role="button" data-rel="external" data-icon="share">Share</a>
+    </p>
+    <!-- PLACEHOLDERS FOR AUDIO ELEMENTS -->
+    <div id="jq_jplayer"></div>
+    <div id="jq_jplayer_container" style="display: none;">
+        <div class="jp-playlist">
+        <ul><li></li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="modal-reciter" data-role="modalview" style="width: 95%; height: 18em;"
+    data-title="Reciters"
+    data-open="App.views.Verse.onReciterOpen">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Verse.onModalClose" data-role="button" data-icon="downloads" data-align="right"></a>
+        </div>
+    </div>
+    <ul data-role="listview" data-click="App.views.Verse.onReciterSelect">
+        <li><label>Mishary Alafasy <input type="radio" name="reciter" value="mishary_alafasy"></label></li>
+        <li><label>Mohammad Jibreel <input type="radio" name="reciter" value="mohammad_jibreel"></label></li>
+    </ul>
+</div>

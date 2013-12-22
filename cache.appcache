@@ -1,0 +1,10 @@
+﻿CACHE MANIFEST
+# VERSION 1
+
+index.html
+
+NETWORK:
+http://api.publicrealm.net
+
+FALLBACK:
+/ offline.html

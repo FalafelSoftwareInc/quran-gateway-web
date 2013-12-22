@@ -1,0 +1,34 @@
+﻿<div id="chapters-detail" data-role="view" data-layout="default"
+    data-init="App.views.Chapter.onInit"
+    data-show="App.views.Chapter.onShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="#drawer-menu" data-role="button" data-rel="drawer" data-icon="reorder" data-align="left" class="fa"></a>
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Chapter.toggleFavorite" data-role="button" data-icon="heart-empty" data-align="right" class="favorite fa"></a>
+        </div>
+    </header>
+    <ul class="sections" data-index="0">
+        <li data-icon="info">Info</li>
+        <li data-icon="compose">Meaning</li>
+        <li data-icon="sounds">Lectures</li>
+    </ul>
+    <ul data-role="listview" data-style="inset" class="content info">
+        <li>Arabic: <span></span></li>
+        <li>Chapter: <span></span></li>
+        <li>Verses: <span></span></li>
+        <li>Chronology: <span></span></li>
+        <li>Juz: <span></span></li>
+        <li>Sajdah: <span></span></li>
+    </ul>
+    <ul data-role="listview" data-style="inset" class="content meanings" style="display: none;">
+        <li><a href="views/chapters/meaning.html?source=Sayyid Abul Ala Maududi">Towards Understanding the Qur'an<br /><small>by Sayyid Abul Ala Maududi</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Sayyid Qutb">In the Shade of the Qur'an<br /><small>by Sayyid Qutb</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Ibn Kathir">Tafsir al-Qur'an al-Azim<br /><small>by Ibn Kathir</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Muhammad al-Asi">The Ascendant Qur'an<br /><small>by Muhammad al-Asi</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Muhammad Metwally al-Sharawy">Tafseer Quran<br /><small>by Muhammad Metwally al-Sharawy</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Muhammad Ali al-Saboony">Safwat al-Tafaseer<br /><small>by Muhammad Ali al-Saboony</small></a></li>
+        <li><a href="views/chapters/meaning.html?source=Muhammad ash-Shawkani">Fath al-Qadeer<br /><small>by Muhammad ash-Shawkani</small></a></li>
+    </ul>
+    <ul class="content lectures" style="display: none;"></ul>
+</div>

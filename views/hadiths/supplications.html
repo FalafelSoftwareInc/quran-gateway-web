@@ -1,0 +1,18 @@
+﻿<div id="hadiths-supplications" data-role="view" data-layout="default"
+    data-title="Supplications"
+    data-init="App.views.Hadiths.onInit"
+    data-show="App.views.Hadiths.onSupplicationsShow">
+    <ul class="listview"></ul>
+</div>
+
+<div id="hadith-modal" data-role="modalview" style="width: 95%; height: 18em;"
+    data-title="References"
+    data-open="App.views.Hadiths.onModalOpen">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Hadiths.onModalClose" data-role="button" data-icon="downloads" data-align="right"></a>
+        </div>
+    </div>
+    <div class="content"></div>
+</div>

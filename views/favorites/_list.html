@@ -1,0 +1,11 @@
+﻿# if (url) { # <a href="#= url #&favorite=true" class="km-listview-link" data-role="listview-link"> # } #
+<span>#= name #</span>
+# if (url) { # </a> # } #
+# if (description) { #
+<a href="\#modal-favorite"
+    data-role="detailbutton"
+    data-icon="more"
+    data-rel="modalview"
+    data-favorite-id="#= id #"
+    data-favorite-type="#= type #"></a>
+# } #

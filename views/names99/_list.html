@@ -1,0 +1,6 @@
+﻿<h3>#= name # <span class="pull-right">#= arabic #</span></h3>
+<p>#= id # - #= translation #</p>
+<a data-click="App.views.Names99.toggleFavorite"
+    data-role="detailbutton"
+    data-style="# if (App.views.Names99.isFavorite(id)) { # rowdelete # } else { # rowinsert # } #"
+    data-name99-id="#= id #"></a>

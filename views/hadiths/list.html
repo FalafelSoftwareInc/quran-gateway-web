@@ -1,0 +1,31 @@
+﻿<div id="hadiths-list" data-role="view" data-layout="default"
+    data-title="Hadiths"
+    data-init="App.views.Hadiths.onInit"
+    data-show="App.views.Hadiths.onShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="#drawer-menu" data-role="button" data-rel="drawer" data-icon="reorder" data-align="left" class="fa"></a>
+            <ul data-role="buttongroup" data-index="0" data-select="App.views.Hadiths.onFilter">
+                <li data-badge="40">
+                    Qudsi
+                </li>
+                <li data-badge="42">
+                    Nawawi
+                </li>
+            </ul>
+        </div>
+    </header>
+    <ul class="listview"></ul>
+</div>
+
+<div id="hadith-modal" data-role="modalview" style="width: 95%; height: 18em;"
+    data-title="References"
+    data-open="App.views.Hadiths.onModalOpen">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Hadiths.onModalClose" data-role="button" data-icon="downloads" data-align="right"></a>
+        </div>
+    </div>
+    <div class="content"></div>
+</div>

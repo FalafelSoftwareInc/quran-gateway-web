@@ -1,0 +1,18 @@
+﻿<div id="favorites-list" data-role="view" data-layout="default"
+    data-title="Favorites"
+    data-init="App.views.Favorites.onInit"
+    data-show="App.views.Favorites.onShow">
+    <ul class="listview"></ul>
+</div>
+
+<div id="modal-favorite" data-role="modalview" style="width: 95%; height: 20em;"
+    data-title="Details"
+    data-open="App.views.Favorites.onModalOpen">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-click="App.views.Favorites.onModalClose" data-role="button" data-icon="downloads" data-align="right"></a>
+        </div>
+    </div>
+    <div class="content"></div>
+</div>

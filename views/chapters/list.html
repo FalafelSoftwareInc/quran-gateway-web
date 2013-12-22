@@ -1,0 +1,27 @@
+﻿<div id="chapters-list" data-role="view" data-layout="default"
+    data-init="App.views.Chapters.onInit"
+    data-show="App.views.Chapters.onShow">
+
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="#drawer-menu" data-role="button" data-rel="drawer" data-icon="reorder" data-align="left" class="fa"></a>
+            <span data-role="view-title">Chapters</span>
+            <a href="#popover-sort" data-role="button" data-rel="popover" data-icon="download" data-align="right"></a>
+        </div>
+    </header>
+
+    <ul class="listview"></ul>
+
+    <div id="popover-sort" data-role="popover">
+        <div data-role="view"
+            data-show="App.views.Chapters.onPopOverShow">
+            <ul data-role="listview" data-click="App.views.Chapters.onSort">
+                <li><label>Chapter <input type="radio" name="chaptersort" value="id"></label></li>
+                <li><label>Name <input type="radio" name="chaptersort" value="name"></label></li>
+                <li><label>Verses <input type="radio" name="chaptersort" value="verses"></label></li>
+                <li><label>Chronology <input type="radio" name="chaptersort" value="chronology"></label></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

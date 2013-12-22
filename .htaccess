@@ -1,0 +1,3 @@
+AddType text/cache-manifest .appcache
+AddType application/x-font-ttf .ttf
+AddType application/x-font-woff .woff

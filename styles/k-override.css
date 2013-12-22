@@ -1,0 +1,58 @@
+﻿#sub-drawer .km-content {
+    background-color: #4e4e4e;
+    color: #fff;
+}
+
+#sub-drawer .km-navbar,
+.km-tablet .km-ios #sub-drawer .km-view-title {
+    background-color: #2e2e2e;
+    color: #fff;
+    -webkit-text-shadow: 0 -1px rgba(0,0,0,.5);
+    text-shadow: 0 -1px rgba(0,0,0,.5);
+}
+
+.k-animation-container {
+    max-width: 500px;
+}
+
+.km-modalview .km-content {
+    padding: 15px;
+}
+
+.km-header .km-navbar .km-buttongroup {
+    margin: 3px 0 5px 0;
+}
+
+.km-listview a {
+    text-decoration: none;
+}
+
+.km-button.large {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.km-view {
+    -webkit-box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 5px #000000;
+}
+
+.km-scrollview > div > [data-role=page] {
+    margin-top: 15px;
+}
+
+.km-modalview .km-scrollview > div > [data-role=page] {
+    margin-top: 30px;
+}
+
+.km-scrollview .km-pages {
+    width: 100%;
+    position: absolute;
+    top: 0;
+	padding-top: 5px;
+}
+
+.km-scrollview p {
+    white-space: normal;
+} 

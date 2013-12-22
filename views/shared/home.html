@@ -1,0 +1,77 @@
+<div id="home" data-role="view" data-layout="default" data-title="Quran Gateway"
+    data-init="App.views.Home.onInit"
+    data-show="App.views.Home.onShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="#drawer-menu" data-role="button" data-rel="drawer" data-icon="reorder" data-align="left" class="fa"></a>
+            <div class="title-img"><img src="images/bismillah.png" /></div>
+            <a href="views/shared/info.html" data-role="button" data-icon="cogs" data-align="right" class="fa"></a>
+        </div>
+    </header>
+    <div data-role="scrollview"><div data-role="page">
+            <div class="progress-wrapper">
+                <div class="chart-recitation"></div>
+                <div class="chart-memorization"></div>
+                <div class="chart-names99"></div>
+                <div class="chart-understanding"></div>
+                <div class="chart-supplications"></div>
+                <div class="chart-prayers"></div>
+                <div class="chart-fasting"></div>
+                <div class="chart-charity"></div>
+                <div class="chart-sunnah"></div>
+            </div>
+        </div><div data-role="page" class="verse">
+            <p class="title"></p>
+            <p class="translation panel-container info">
+                Verse of the day loading...
+            </p>
+        </div><div data-role="page" class="hadith">
+            <p class="title"></p>
+            <p class="translation panel-container info">
+                Hadith of the day loading...
+            </p>
+        </div></div>
+</div>
+
+<div id="getting-started-modal" data-role="modalview" style="width: 95%; height: 18em;"
+    data-title="Getting Started"
+    data-open="App.views.Home.onModalOpen">
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div data-role="scrollview"><div data-role="page">
+                <p class="panel-container success">
+                    <i class="icon-dashboard"></i>
+                    The dashboard tracks your progress and can be updated by clicking any of the charts.
+                </p>
+            </div><div data-role="page">
+                <p class="panel-container success">
+                    <i class="icon-book"></i>
+                    The chapters area displays an overview, such as chronology, meanings, and lectures.
+                </p>
+            </div><div data-role="page">
+                <p class="panel-container success">
+                    <i class="icon-th"></i>
+                    The 99 Names of Allah are listed for convenience, understanding, and memorization.
+                </p>
+            </div><div data-role="page">
+                <p class="panel-container success">
+                    <i class="icon-heart"></i>
+                    The favorites area store your bookmarks for easy referencing.
+                </p>
+            </div><div data-role="page">
+                <p class="panel-container success">
+                    <i class="icon-reorder"></i>
+                    The side drawer menu lists verses by categories, ahadith, live pilgrimage, Ramadan, and more!
+                </p>
+            </div></div>
+        <div style="margin-top: 15px; text-align: center;">
+            <a data-role="button" class="fa"
+                data-click="App.views.Home.onModalConfirm"
+                data-icon="check">OK, got it!</a>
+        </div>
+    </div>
+</div>
