@@ -1,2 +1,2 @@
-quran-gateway-web
-=================
+Qur'an Gateway
+==============
