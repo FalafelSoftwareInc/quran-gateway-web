@@ -11,24 +11,24 @@
     define('baseresourcesurl', [], function () { return 'http://resources.publicrealm.net'; });
     define('jquery', [], function () { return window.jQuery; });
 
-    //CONFIFURE SHORTCUT ALIASES
+    //CONFIGURE SHORTCUT ALIASES
     require.config({
         baseUrl: currentPath,
         paths: {
-            add2home: 'libs/add2home/add2home',
-            hijri: 'libs/hijricalendar/hijricalendar.mod',
-            jplayer: 'libs/jplayer/jquery.jplayer.min',
-            jplaylist: 'libs/jplayer/add-on/jplayer.playlist.min',
-            jsurl: 'libs/js-url/url.min',
-            kendoui: 'libs/kendoui/js', //FOR AMD USE
-            lostorage: 'libs/lostorage/loStorage.min',
-            localstoragedb: 'libs/localstoragedb/localstoragedb.min',
-            moment: 'libs/moment/moment.min',
-            spin: 'libs/spin/spin.min',
-            text: 'libs/require/text',
-            toastr: 'libs/toastr/toastr.min',
-            underscore: 'libs/underscore/underscore-min',
-            'underscore.string': 'libs/underscore/underscore.string.min'
+            add2home: '../scripts/add2home/add2home',
+            hijri: '../scripts/hijricalendar/hijricalendar.mod',
+            jplayer: '../scripts/jplayer/jquery.jplayer.min',
+            jplaylist: '../scripts/jplayer/add-on/jplayer.playlist.min',
+            jsurl: '../scripts/js-url/url.min',
+            kendoui: '../scripts/kendoui/js', //FOR AMD USE
+            lostorage: '../scripts/lostorage/loStorage.min',
+            localstoragedb: '../scripts/localstoragedb/localstoragedb.min',
+            moment: '../scripts/moment/moment.min',
+            spin: '../scripts/spin/spin.min',
+            text: '../scripts/require/text',
+            toastr: '../scripts/toastr/toastr.min',
+            underscore: '../scripts/underscore/underscore-min',
+            'underscore.string': '../scripts/underscore/underscore.string.min'
         },
         // The shim config allows us to configure dependencies for
         // scripts that do not call define() to register a module
